@@ -55,4 +55,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'rails_12factor', group: :production
 
+gem 'devise'
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+
 ruby "2.3.1"
