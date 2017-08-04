@@ -1,10 +1,10 @@
 <div class="general">
-  <#%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
+  <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
   <h1>Simple ToDo Lists</h1>
   <h2>From Ruby Garage</h2>
 
   <div class="projects">
-    <#%= render 'projects' %>
+    <%= render 'projects' %>
   </div>
 
   <a href="" class="create_todolist">
@@ -12,10 +12,10 @@
     <span class="create_todolist_span">Add ToDo List</span>
   </a>
 
-  <#%= form_for @project, remote: true do |f| %>
-    <#%= f.text_field :title, class: "add_todolist_text"%>
-    <#%= f.submit "OK", class: "add_todolist_button" %>
-  <#% end %>
+  <%= form_for @project, remote: true do |f| %>
+    <%= f.text_field :title, class: "add_todolist_text"%>
+    <%= f.submit "OK", class: "add_todolist_button" %>
+  <% end %>
 
   <h5>&copy; Ruby Garage</h5>
 </div>
