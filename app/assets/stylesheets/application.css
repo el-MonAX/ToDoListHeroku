@@ -79,7 +79,7 @@
     margin: 40px 0 -4px 0;
     width: 700px;
     color: white;
-    background-image: url(/assets/back_proj_title.png);
+    background-image: url('/assets/back_proj_title.png');
     display: inline-block;
   }
 
@@ -119,17 +119,17 @@
     margin: 12px 8px 8px 7px;
     width: 400px;
     height: 18px;
-    background-image: url(/assets/back_proj_inp.png);
+    background-image: url('/assets/back_proj_inp.png');
   }
 
   .task_input_date {
     float: left;
     margin: 12px 8px 8px -7px;
-    background-image: url(/assets/back_proj_inp.png);
+    background-image: url('/assets/back_proj_inp.png');
   }
 
   .task_input_button {
-    background-image: url(/assets/back_proj_inp_but.png);
+    background-image: url('/assets/back_proj_inp_but.png');
     color: white;
     margin: 12px 8px 8px 0px;
     height: 24px;
@@ -202,7 +202,7 @@
 
   .create_todolist {
     margin: 15px 415px;
-    background-image: url(/assets/back_proj_title.png);
+    background-image: url('/assets/back_proj_title.png');
     font-weight: bold;
     color: white;
     text-decoration: none;
