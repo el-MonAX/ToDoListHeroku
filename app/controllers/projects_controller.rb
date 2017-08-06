@@ -2,7 +2,7 @@ class ProjectsController < ApplicationController
   respond_to :html, :js
 
   def index
-    @projects = Project.all #current_user.projects
+    @projects = current_user.projects #Project.all
     @project = Project.new
     @task = Task.new
   end
