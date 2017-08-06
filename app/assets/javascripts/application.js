@@ -14,8 +14,8 @@
 //= require turbolinks
 //= require_tree .
 
-//= require jquery-ui
 //= require jquery
+//= require jquery-ui
 //= require jquery_ujs
 
 $(document).ready(function(){
