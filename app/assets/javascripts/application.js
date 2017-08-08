@@ -10,16 +10,13 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-
-//= require jquery
-//= require jquery-ui
-//= require jquery_ujs
-
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
 
-
+//= require jquery
+//= require jquery-ui
+//= require jquery_ujs
 
 $(document).ready(function(){
   $('.general').on('click','.edit_project_img', function() {
@@ -64,9 +61,9 @@ $(document).ready(function(){
       var tasks = $(this).sortable("toArray").toString();
       var path = '/projects/'+ idProject +'/tasks/sorting'
       $.ajax({
-      type: "post",
-      data: {"task":tasks},
-      url: path
+        type: "post",
+        data: {"task":tasks},
+        url: path
       });
     }
   });

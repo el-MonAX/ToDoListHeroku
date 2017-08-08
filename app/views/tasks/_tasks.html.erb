@@ -1,4 +1,4 @@
-<% project.tasks.each do |task| %>
+<% project.tasks.order(:position).each do |task| %>
   <li class="task_block" id="<%= task.id %>">
     <div class="task_status">
       <%= check_box_tag "", "", task.status, class: "checkbox" %>
