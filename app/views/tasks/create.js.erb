@@ -1,4 +1,9 @@
 $('.new_task').bind('ajax:success', function() {
   $(this).parents('.project').find('.task_list').html("<%= escape_javascript(render 'tasks', project: @project) %>");
-  $(this).parents('.project').find('.task_input_text, .task_input_date').val("");
+  taskDate = $(this).parents('.project').find('.task_input_date');
+  taskName = $(this).parents('.project').find('.task_input_text');
+  if(taskName.val().trim().length && taskName.val().length) {
+    taskName.val('');
+    taskDate.val('');
+  };
 });

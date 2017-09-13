@@ -1,4 +1,5 @@
 $(".projects").html("<%= escape_javascript(render 'projects') %>");
+$('.add_todolist_text').val('');
 $('.new_project').hide();
 $(".task_list").sortable({
     items: 'li',
